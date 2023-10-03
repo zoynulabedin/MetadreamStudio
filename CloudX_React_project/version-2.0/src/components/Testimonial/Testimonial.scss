@@ -1,0 +1,15 @@
+.testimonial-wrapper{
+    .testimonial-item{
+        border-radius: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(10px);
+        max-width: inherit !important;
+        width: inherit !important;
+       
+    }
+    .slick-current{
+        margin-top: 30px;
+    }
+   
+}

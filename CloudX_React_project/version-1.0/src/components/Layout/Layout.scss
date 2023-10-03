@@ -1,0 +1,77 @@
+.header-wrapper {
+	position: sticky;
+	top: 0;
+	background-color: #fff; /* Adjust this to your header's background color */
+	z-index: 100; /* Ensure the header stays on top of other content */
+	// Your header styles here...
+}
+.bullet-pointers {
+	position: fixed;
+	top: 50%;
+	right: 30px; /* Adjust this value to control the distance from the right edge */
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 12;
+
+	a {
+		&:hover {
+			span {
+				color: #fff;
+				display: block;
+				position: absolute;
+				padding: 5px 20px;
+				right: 20px;
+				padding-right: 30px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				width: fit-content;
+				height: 40px;
+				top: -10px;
+				text-align: right;
+				background-color: #ffffff33;
+				transition: 0.3s;
+				clip-path: polygon(
+					0 0,
+					85% 0,
+					87% 35%,
+					100% 50%,
+					87% 62%,
+					86% 100%,
+					0 100%
+				);
+				font-size: 15px;
+			}
+		}
+		width: 8px;
+		height: 8px;
+		flex-shrink: 0;
+		border-radius: 8px;
+		background: #fff;
+		border: none;
+		margin: 20px 0;
+		cursor: pointer;
+		outline: none;
+		margin-top: 15px;
+		position: relative;
+		span {
+			display: none;
+		}
+		&.active::after {
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			line-height: 25px;
+			left: -8px;
+			top: -8px;
+			content: "";
+			border: 1px solid #fff;
+			border-radius: 50%;
+		}
+	}
+}
+
+/* Your other SCSS styles */

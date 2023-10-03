@@ -1,0 +1,66 @@
+.custom-button-v1 {
+	border: 1px solid #d41c86;
+	border-image: linear-gradient(to right, #d41c86, #136ef9) 1 stretch;
+	border-image-slice: 1;
+	border-radius: 5px !important;
+	width: 150px;
+	height: 60px;
+	flex-shrink: 0;
+	@media screen and (max-width: 767px) {
+		width: 100px;
+		height: 50px;
+	}
+	@media screen and (max-width: 500px) {
+		width: 80px;
+		height: 50px;
+	}
+	&:hover {
+		border-radius: 5px;
+		background: linear-gradient(132deg, #d41c86 0%, #136ef9 100%);
+	}
+}
+
+.custom-button-v2 {
+	width: 150px;
+	height: 60px;
+	flex-shrink: 0;
+	@media screen and (max-width: 767px) {
+		width: 100px;
+		height: 50px;
+	}
+	@media screen and (max-width: 500px) {
+		width: 100px;
+		height: 50px;
+	}
+	background: linear-gradient(132deg, #d41c86 0%, #136ef9 100%);
+}
+
+.cust-btn {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 16px;
+	border: 2px solid transparent; /* Set initial border */
+	color: white;
+	background: transparent;
+	border-image: linear-gradient(to right, #d41c86, #136ef9);
+	border-image-slice: 1; /* Use 1 for 100% slicing */
+	border-radius: 5px;
+	cursor: pointer;
+	&:hover {
+		display: flex !important;
+		align-items: center;
+		gap: 10px;
+		text-align: center;
+		padding: 10px 20px;
+		font-size: 16px;
+		color: white;
+		background: linear-gradient(to right, #d41c86, #136ef9);
+		background-clip: padding-box;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+}

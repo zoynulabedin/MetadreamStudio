@@ -1,0 +1,13 @@
+.market-wrapper {
+	overflow: auto !important;
+	.numeric-list {
+		li {
+			color: rgba(255, 255, 255, 0.8);
+			font-family: Inter;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 30px; /* 200% */
+		}
+	}
+}

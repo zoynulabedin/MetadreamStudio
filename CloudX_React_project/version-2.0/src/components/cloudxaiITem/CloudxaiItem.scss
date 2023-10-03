@@ -1,0 +1,28 @@
+.slider-item{
+   .slide-img{
+    border-radius: 30px;
+border: 1px solid rgba(255, 255, 255, 0.15);
+background: rgba(255, 255, 255, 0.10);
+backdrop-filter: blur(10px);
+padding: 10px;
+margin: auto;
+img{
+    border-radius: 30px;
+}
+   }
+}
+
+.slick-prev{
+width:80px;
+height: 80px;
+z-index: 22;
+left: -56px;
+top: 40%;
+}
+.slick-next{
+    width:80px;
+    height: 80px;
+    z-index: 22;
+    right: -36px;
+    top: 40%;
+}

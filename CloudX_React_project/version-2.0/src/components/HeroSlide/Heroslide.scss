@@ -1,0 +1,173 @@
+.heroslide-wrapper {
+	.loop-img {
+		img {
+			width: 100%; /* Adjust the size as needed */
+    height: auto;
+    animation: rotate 30s linear infinite; /* Adjust the animation duration as needed */
+			max-width: 100%;
+			@keyframes rotate {
+				0% {
+					transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+		}
+	}
+	background: linear-gradient(
+		136deg,
+		rgba(6, 23, 49, 0.7) 0%,
+		rgba(21, 4, 26, 0.7) 100%
+	);
+	backdrop-filter: blur(7.5px);
+
+	width: 100%;
+	@media screen and (max-width: 1540px) {
+	
+		width: 100%;
+		padding-bottom: 100px;
+	}
+
+	.slide-content {
+		h1 {
+			color: #FFF;
+			font-family: Space Grotesk;
+			font-size: 100px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 80px; /* 119% */
+			@media screen and (max-width: 1540px) {
+				font-size: 70px;
+				line-height: 70px;
+			}
+			@media screen and (max-width: 1200px) {
+				font-size: 50px;
+				line-height: 50px;
+			}
+			@media screen and (max-width: 1024px) {
+				font-size: 48px;
+				line-height: 48px;
+			}
+			@media screen and (max-width: 768px) {
+				font-size: 38px;
+				line-height: 48px;
+				text-align: left;
+			}
+			@media screen and (max-width: 500px) {
+				font-size: 38px;
+				line-height: 48px;
+				text-align: center;
+				
+			}
+		}
+		.color-hero-text {
+			color: #136EF9;
+			font-family: Space Grotesk;
+			font-size: 100px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 119px;
+			
+			@media screen and (max-width: 1540px) {
+				font-size: 70px;
+				line-height: 70px;
+			}
+			@media screen and (max-width: 1200px) {
+				font-size: 50px;
+				line-height: 50px;
+			}
+			@media screen and (max-width: 1024px) {
+				font-size: 48px;
+				line-height: 48px;
+				text-align: center;
+			}
+			@media screen and (max-width: 768px) {
+				font-size: 38px;
+				line-height: 48px;
+				text-align: left;
+				margin-right: 10px;
+			}
+			@media screen and (max-width: 500px) {
+				text-align: center;
+			}
+		}
+		.text-slightly-dark {
+			color: rgba(255, 255, 255, 0.6);
+			font-family: Inter;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 40px;
+			margin-top: 10px;
+			@media screen and (max-width: 768px) {
+				font-size: 20px;
+				line-height: 24px;
+				text-align: left;
+				margin-bottom: 50px;
+			}
+			@media screen and (max-width: 500px) {
+				text-align: center;
+			}
+		}
+		.text-slightly-white {
+			color: rgba(255, 255, 255, 0.9);
+			font-family: Inter;
+			font-size: 30px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 40px;
+			@media screen and (max-width: 1024px) {
+				font-size: 20px;
+				line-height: 30px;
+				text-align: left;
+			}
+			@media screen and (max-width: 768px) {
+				font-size: 20px;
+				line-height: 30px;
+				text-align: left;
+				margin-bottom: 30px;
+				margin-top: 20px;
+			}
+			@media screen and (max-width: 500px) {
+				text-align: center;
+			}
+		}
+		.cust-btn {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			cursor: pointer;
+			padding: 10px 20px;
+			text-align: center;
+			z-index: 10000;
+			position: relative;
+			font-size: 16px;
+			border: 2px solid transparent; /* Set initial border */
+			color: white;
+			background: transparent;
+			border-image: linear-gradient(to right, #d41c86, #136ef9);
+			border-image-slice: 1; /* Use 1 for 100% slicing */
+			border-radius: 5px;
+			cursor: pointer;
+			@media screen and (max-width: 768px) {
+				margin-top: 50px;
+				
+			}
+			@media screen and (max-width: 500px) {
+				margin: auto;
+			}
+			&:hover {
+				display: inline-block;
+				padding: 10px 20px;
+				text-align: center;
+				font-size: 16px;
+				color: white;
+				background: linear-gradient(to right, #d41c86, #136ef9);
+				background-clip: padding-box;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+		}
+	}
+}

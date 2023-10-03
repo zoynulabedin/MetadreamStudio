@@ -1,0 +1,103 @@
+.price-wrapper {
+	.monthly__package {
+        border: 2px solid; /* Set border style and width */
+  border-image: linear-gradient(to right, #D41C86, #136EF9); 
+  border-image-slice: 1;
+		border-radius: 5px;
+		background: #000;
+		backdrop-filter: blur(7.5px);
+		padding: 25px;
+		.Package__title {
+			font-family: Inter;
+			font-size: 30px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			background: linear-gradient(138deg, #d41c86 0%, #136ef9 100%);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			text-align: center;
+		}
+		.package__price {
+			text-align: center;
+			color: rgba(255, 255, 255, 0.6);
+
+			/* Menu */
+			font-family: Inter;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 24px;
+			span {
+				color: #fff;
+				font-family: Inter;
+				font-size: 30px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 24px; /* 80% */
+			}
+		}
+		.package__price_credit {
+			color: #fff;
+			font-family: Inter;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 24px; /* 100% */
+			text-align: center;
+		}
+		.Package__feature {
+			color: #fff;
+			font-family: Inter;
+			font-size: 30px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-align: center;
+		}
+	}
+	.monthly__package_feature {
+		border: 2px solid; /* Set border style and width */
+		border-image: linear-gradient(to right, #d41c86, #136ef9);
+		border-image-slice: 1;
+		border-radius: 5px;
+		padding: 25px;
+		background: linear-gradient(
+			22deg,
+			rgba(212, 28, 134, 0.8) 0%,
+			rgba(19, 110, 249, 0.8) 100%
+		);
+		backdrop-filter: blur(7.5px);
+	}
+	.monthly__package_feature {
+		.Package__feature {
+			color: #fff;
+			font-family: Inter;
+			font-size: 30px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-align: center;
+		}
+		.package__price {
+			text-align: center;
+			color: rgba(255, 255, 255, 0.6);
+
+			/* Menu */
+			font-family: Inter;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 24px;
+			span {
+				color: #fff;
+				font-family: Inter;
+				font-size: 30px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 24px; /* 80% */
+			}
+		}
+	}
+}

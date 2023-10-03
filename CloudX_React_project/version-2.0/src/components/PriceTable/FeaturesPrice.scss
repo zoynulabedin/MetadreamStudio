@@ -1,0 +1,8 @@
+.featured_btn_gen {
+	border-radius: 5px;
+background: #131313;
+backdrop-filter: blur(7.5px);
+border: 2px solid; /* Set border style and width */
+  border-image: linear-gradient(to right, #D41C86, #136EF9); 
+  border-image-slice: 1;
+}
