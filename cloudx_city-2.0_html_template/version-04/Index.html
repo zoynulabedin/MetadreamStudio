@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+	<div
+	className="flex flex-row justify-between w-full items-start"
+	id="MainmenuRoot"
+  >
+	<div className="text-3xl font-['Inter'] font-semibold text-white mt-4">
+	  Start Bootstrap
+	</div>
+	<div className="flex flex-row mb-px gap-12 items-end">
+	  <div className="text-xl font-['Inter'] font-medium text-white mb-3">
+		Home
+	  </div>
+	  <div className="text-xl font-['Inter'] text-white/80 mb-3">About</div>
+	  <div className="text-xl font-['Inter'] text-white/80 mb-3 mr-2">Pages</div>
+	  <div className="text-xl font-['Inter'] text-white/80 mb-3 mr-px">
+		Contact
+	  </div>
+	  <button className="self-start flex flex-col items-start" id="Visitbutton">
+		<div className="bg-white flex flex-col justify-center w-40 h-16 shrink-0 items-center rounded">
+		  <div className="text-xl font-['Work_Sans'] font-medium">
+			Visit Channel
+		  </div>
+		</div>
+	  </button>
+	</div>
+  </div>
+</body>
+</html>
