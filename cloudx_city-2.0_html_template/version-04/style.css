@@ -918,10 +918,14 @@ button.share-btn {
 	font-size:32px !important;
 }
 @media only screen and (max-width: 767px){
-	.restroom-trailer-wrapper{
-		margin-top: 0px;
-	}
+
 	.author-data span{
 		font-size:24px !important;
+	}
+}
+
+@media only screen and (max-width: 1200px){
+	.restroom-trailer-wrapper{
+		margin-top: 0px;
 	}
 }
