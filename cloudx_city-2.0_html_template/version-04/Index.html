@@ -1,46 +1,331 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="//cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
-</head>
-<body>
-	<div
-	className="flex flex-row justify-between w-full items-start"
-	id="MainmenuRoot"
-  >
-	<div className="text-3xl font-['Inter'] font-semibold text-white mt-4">
-	  Start Bootstrap
-	</div>
-	<div className="flex flex-row mb-px gap-12 items-end">
-	  <div className="text-xl font-['Inter'] font-medium text-white mb-3">
-		Home
-	  </div>
-	  <div className="text-xl font-['Inter'] text-white/80 mb-3">About</div>
-	  <div className="text-xl font-['Inter'] text-white/80 mb-3 mr-2">Pages</div>
-	  <div className="text-xl font-['Inter'] text-white/80 mb-3 mr-px">
-		Contact
-	  </div>
-	  <button className="self-start flex flex-col items-start" id="Visitbutton">
-		<div className="bg-white flex flex-col justify-center w-40 h-16 shrink-0 items-center rounded">
-		  <div className="text-xl font-['Work_Sans'] font-medium">
-			Visit Channel
-		  </div>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Porta potty website</title>
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Navbar -->
+		<div class="Header">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<!-- Logo -->
+					<a class="navbar-brand" href="#"
+						>Start Bootsrap</a>
+
+					<!-- Mobile menu button -->
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"
+							><i class="fa fa-bars" aria-hidden="true"></i
+						></span>
+					</button>
+
+					<div class="Mobile-menu-wrapper" id="mobileMenu">
+						<button id="menuClose">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</button>
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Pages</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contact Us</a>
+							</li>
+							<a class="btn btn-cs-btn ml-2 mobile" href="tel:+602 306 3452"
+								><i class="fa fa-phone" aria-hidden="true"></i> Visit Channel</a
+							>
+						</ul>
+					</div>
+					<!-- Navigation menu -->
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Pages</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Call Now Button -->
+					<a class="btn btn-cs-btn ml-2 desk" href="tel:+602 306 3452"
+						><i class="fa fa-phone" aria-hidden="true"></i> Visit Channel</a
+					>
+				</div>
+			</nav>
 		</div>
-	  </button>
-	</div>
-  </div>
-</body>
+		<!-- Hero -->
+		<section
+			class="Hero__section"
+			style="background-image: url('./assets/img/video.png')">
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="play-button-wrapper">
+							<button id="playBtn" class="popup-youtube play-button" data-video-id="GSJPueAJnu8"><i class="fa fa-play" aria-hidden="true"></i></button>
+				
+
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		
+		<!-- services -->
+		<section
+			class="services_area">
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-2 col-md-3 col-sm-12">
+						<div class="left-sidebar">
+							<div id="contents">
+								<h4>Table of Contents</h4>
+								<ul class="table-ul">
+									<li><a href="#section-1">1. A Short Primer on Mineral Rights</a></li>
+									<li><a href="#section-2">2. Understanding Oil and Gas Royalties</a></li>
+									<li><a href="#section-3">3. What is an Oil or Gas Royalty Interest?</a></li>
+									<li><a href="#section-4">4. What are the different types of royalty interests</a></li>
+									<li><a href="#section-5">5. How to Calculate an Oil or Gas Royalty Payment?</a></li>
+									<li><a href="#section-6">6. How to Calculate Net Revenue Interest on an Oil or Gas Lease?</a></li>
+									<li><a href="#section-7">7. How Long Do Oil and Gas Leases Go For?</a></li>
+									<li><a href="#section-8">8. Reasons for Selling an Oil or Gas Royalty</a></li>
+									<li><a href="#section-9">9. How to Buy Oil and Gas Royalties?</a></li>
+									<li><a href="#section-10">10. Bottom Line</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-8 col-md-6 col-sm-12">
+						<div class="restroom-trailer-wrapper ">
+							<h1>How to Make Money Online</h1>
+							<div class="meta-box">
+								
+								<div class="author-flex">
+									<div class="box">
+										<img style="width:60px;height:60px" src="./assets/img/author.png" alt="" />
+									</div>
+									<div class="box">
+										<p>Last Updated on July 19, 2023, by Angel Cruz</p>
+									</div>
+									<div class="box">
+										<p style="font-weight: 700;"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 mins well spent</p>
+									</div>
+									<div class="box">
+										<button id="openPopupButton" class="share-btn"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</button>
+									</div>
+									<div id="myPopup" class="white-popup mfp-hide">
+										<div class="shareit">
+											<!-- facebook -->
+											<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="blank" title="facebook"><i class="fa fa-facebook"></i></a>
+									  
+											<!-- twitter -->
+											<a class="twitter" href="https://twitter.com/intent/tweet?text=YOUR_TITLE&url=YOUR_URL" target="blank" title="twitter"><i class="fa fa-twitter"></i></a>
+									  
+											<!-- linkedin -->
+											<a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_URL&title=YOUR_TITLE" target="blank" title="linkedin"><i class="fa fa-linkedin"></i></a>
+									  
+											<!-- reddit -->
+											<a class="reddit" href="https://www.reddit.com/submit?url=YOUR_URL&title=YOUR_TITLE" target="blank" title="reddit"><i class="fa fa-reddit"></i></a>
+									  
+											<!-- tumblr -->
+											<a class="tumblr" href="https://www.tumblr.com/share/link?url=YOUR_URL&name=YOUR_TITLE&description=YOUR_DESC" target="blank" title="tumblr"><i class="fa fa-tumblr"></i></a>
+									  
+											<!-- pinterest -->
+											<a class="pinterest" href="https://pinterest.com/pin/create/button/?url=YOUR_URL&media=IMAGE_URL&description=YOUR_TITLE" target="blank" title="pinterest"><i class="fa fa-pinterest-p"></i></a>
+										  </div>
+									</div>
+								</div>
+								
+							
+							</div>
+							<p>Video content refers to any materials distributed in video format. It can include vlogs, presentations, product demos, testimonial videos and more. Many companies create video content as part of their marketing strategy
+
+								Video content is any content format that features or includes video. Common forms of video content include vlogs, animated GIFs, live videos, customer testimonials, recorded presentations and webinars.
+								
+								something that is contained: the contents of a box. the subjects or topics covered in a book or document. the chapters or other formal divisions of a book or document: a table of contents.</p>
+								<p>Are you in need of portable toilet rentals in Olathe? Patriot Portable Restrooms has been serving Olathe for decades, working alongside local businesses, homeowners, and more. 
+									We take pride in our customer service and high-quality equipment. Our team delivers on all levels and we guarantee you will love working with us!</p>
+							<h2>Understanding how to make money</h2>
+							<img class="img-fluid" src="/assets/img/video-1.png" alt="">
+							<p>Are you in need of portable toilet rentals in Olathe? Patriot Portable Restrooms has been serving Olathe for decades, working alongside local businesses, homeowners, and more. 
+								We take pride in our customer service and high-quality equipment. Our team delivers on all levels and we guarantee you will love working with us!</p>
+								<p>Are you in need of portable toilet rentals in Olathe? Patriot Portable Restrooms has been serving Olathe for decades, working alongside local businesses, homeowners, and more. 
+									We take pride in our customer service and high-quality equipment. Our team delivers on all levels and we guarantee you will love working with us!</p>
+									<p>To choose the right video format, you need to consider your marketing goals, your budget, your resources, and your buyer persona. For example, if you want to educate your prospects about your product or service, you may opt for an explainer video or a webinar.</p>
+							<br>
+							<h2>Interest Owner or Non-Interest Owner</h2>
+								<ul class="version-3-ul">
+									
+									<li><strong>Standard porta potty rental</strong>you can’t go wrong with our standard unit if you are looking for the basics.</li>
+									<li><strong>Flushing porta potty rental </strong>the PJ flush is a step up from our standard unit. It’s flushing system is foot-pump activated for keeping everyone’s hands clean.</li>
+									<li><strong>Towable porta potty rental</strong>the towable porta potty is a standard unit on a single-axle trailer, perfect for roadside construction or projects that on the move.</li>
+									<li><strong>Wheelchair-accessible porta potty </strong>our handicap porta potties are spacious and fully accommodate – people with disabilities.</li>
+								</ul>
+								
+							<br>
+								<p>Are you in need of portable toilet rentals in Olathe? Patriot Portable Restrooms has been serving Olathe for decades, working alongside local businesses, homeowners, and more. 
+									We take pride in our customer service and high-quality equipment. Our team delivers on all levels and we guarantee you will love working with us!</p>
+						</div>
+					
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-12">
+						<div class="right-sidebar">
+							<div class="meta-box">
+								<div class="meta-flex">
+									
+								
+								</div>
+							
+								<div class="author-block">
+									<img style="width:75px;height:75px" src="./assets/img/author.png" alt="" />
+									<div class="author-data">
+										<span class="author__name">Angel Cruz</span><br>
+										
+									</div>
+									<div class="published">
+										<span  ><strong>Published: </strong>September 06, 2023</span>
+									
+									</div>
+								</div>
+								<p class="auth-descs">
+									Angel cruz is the Founder and CEO of CloudX-AI, as well as Co-Founder of Pheasant Resources. He formerly served as Chief Operating Officer for Moore Minerals, LC, a family office and mineral and royalty acquisition firm. U.S. He currently serves on the board for EE Systems, Inc., a gas compression manufacturer as well as ZeoGas, LLC, a global methanol project, both based out of Houston. Texas.
+															</p>
+								<ul class="social_links" style="display: flex;">
+									<li>
+										<a href="#"
+											><i class="fa fa-instagram" aria-hidden="true"></i>
+											</a
+										>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+											</a
+										>
+									</li>
+									<li>
+										<a href="#"
+											><i class="fa fa-facebook" aria-hidden="true"></i> </a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- footer -->
+		<footer class="text-light footer-wrapper">
+			<div class="container">
+				<div class="row">
+					<!-- 4 Column Widgets -->
+					<div class="col-lg-3 col-md-6 mb-4">
+						<div class="widgets">
+							<div class="footer_logo">
+								<a href="#">Start Bootstrap</a>
+								
+							</div>
+							<p>A way to stay protected while on the road, car insurance offers a financial safety net should accidents occur, regardless of who's at fault.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4">
+						<h5>Get In Touch  </h5>
+						<ul class="get__in__touch">
+							<span>Contact:</span>
+							<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+987 543 2341">+987 543 2341</a></li>
+							<span>Email:</span>
+							<li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:johnrobinson@gmail.com">johnrobinson@gmail.com</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4">
+						<h5>Pages</h5>
+						<ul class="pages_nav">
+							<li><a href="">Home</a></li>
+							<li><a href="">About</a></li>
+							<li><a href="">Contact Us</a></li>
+						</ul>
+					
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4">
+						<h5>Follow</h5>
+						<ul class="social_links footer__social__links">
+							<li>
+								<a href="#"
+									><i class="fa fa-instagram" aria-hidden="true"></i>
+									Instagram</a
+								>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+									Twitter</a
+								>
+							</li>
+							<li>
+								<a href="#"
+									><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a
+								>
+							</li>
+							<li>
+								<a href="#"
+									><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<hr />
+				</div>
+				<div class="row">
+					<!-- 2 Column Footer -->
+					<div class="col-md-12 mb-3 text-center">
+						<p class="copywrite_text">
+							&copy; 2023 Your Website Name. All Rights Reserved.
+						</p>
+					</div>
+					
+				</div>
+			</div>
+			
+		</footer>
+		<script src="./assets/js/jquery-3.7.1.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js" integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="./assets/js/bootstrap.min.js"></script>
+		<script src="./assets/js/mesonary.js"></script>
+		<script src="./assets/js/scripts.js"></script>
+	</body>
 </html>
