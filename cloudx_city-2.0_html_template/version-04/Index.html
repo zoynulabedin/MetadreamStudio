@@ -3,11 +3,18 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Porta potty website</title>
+		<title>Video template</title>
 		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="./assets/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="style.css" />
+		<style>
+			#contents {
+				position: sticky;
+				top: 20px; /* Adjust the value as needed */
+				background-color: #fff;
+			}
+		</style>
 	</head>
 	<body>
 		<!-- Navbar -->
@@ -110,23 +117,18 @@
 							<div id="contents">
 								<h4>Table of Contents</h4>
 								<ul class="table-ul">
-									<li><a href="#section-1">1. A Short Primer on Mineral Rights</a></li>
-									<li><a href="#section-2">2. Understanding Oil and Gas Royalties</a></li>
-									<li><a href="#section-3">3. What is an Oil or Gas Royalty Interest?</a></li>
-									<li><a href="#section-4">4. What are the different types of royalty interests</a></li>
-									<li><a href="#section-5">5. How to Calculate an Oil or Gas Royalty Payment?</a></li>
-									<li><a href="#section-6">6. How to Calculate Net Revenue Interest on an Oil or Gas Lease?</a></li>
-									<li><a href="#section-7">7. How Long Do Oil and Gas Leases Go For?</a></li>
-									<li><a href="#section-8">8. Reasons for Selling an Oil or Gas Royalty</a></li>
-									<li><a href="#section-9">9. How to Buy Oil and Gas Royalties?</a></li>
-									<li><a href="#section-10">10. Bottom Line</a></li>
+									<li><a href="#section-1">1. How to Make Money Online</a></li>
+									<li><a href="#section-2">2. Understanding how to make money</a></li>
+									<li><a href="#section-3">3.Interest Owner or Non-Interest Owner</a></li>
+								
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="col-xl-8 col-md-12 col-sm-12">
 						<div class="restroom-trailer-wrapper ">
-							<h1>How to Make Money Online</h1>
+							<div id="section-1">
+								<h1 >How to Make Money Online</h1>
 							<div class="meta-box">
 								
 								<div class="author-flex">
@@ -174,15 +176,18 @@
 								something that is contained: the contents of a box. the subjects or topics covered in a book or document. the chapters or other formal divisions of a book or document: a table of contents.</p>
 								<p>Are you in need of portable toilet rentals in Olathe? Patriot Portable Restrooms has been serving Olathe for decades, working alongside local businesses, homeowners, and more. 
 									We take pride in our customer service and high-quality equipment. Our team delivers on all levels and we guarantee you will love working with us!</p>
-							<h2>Understanding how to make money</h2>
-							<img class="img-fluid" src="/assets/img/video-1.png" alt="">
-							<p>Are you in need of portable toilet rentals in Olathe? Patriot Portable Restrooms has been serving Olathe for decades, working alongside local businesses, homeowners, and more. 
-								We take pride in our customer service and high-quality equipment. Our team delivers on all levels and we guarantee you will love working with us!</p>
+							</div>
+							<div id="section-2">
+								<h2>Understanding how to make money</h2>
+								<img class="img-fluid" src="./assets/img/video-1.png" alt="">
 								<p>Are you in need of portable toilet rentals in Olathe? Patriot Portable Restrooms has been serving Olathe for decades, working alongside local businesses, homeowners, and more. 
 									We take pride in our customer service and high-quality equipment. Our team delivers on all levels and we guarantee you will love working with us!</p>
-									<p>To choose the right video format, you need to consider your marketing goals, your budget, your resources, and your buyer persona. For example, if you want to educate your prospects about your product or service, you may opt for an explainer video or a webinar.</p>
-							<br>
-							<h2>Interest Owner or Non-Interest Owner</h2>
+									<p>Are you in need of portable toilet rentals in Olathe? Patriot Portable Restrooms has been serving Olathe for decades, working alongside local businesses, homeowners, and more. 
+										We take pride in our customer service and high-quality equipment. Our team delivers on all levels and we guarantee you will love working with us!</p>
+										<p>To choose the right video format, you need to consider your marketing goals, your budget, your resources, and your buyer persona. For example, if you want to educate your prospects about your product or service, you may opt for an explainer video or a webinar.</p>
+							</div>
+							<div id="section-3">
+								<h2>Interest Owner or Non-Interest Owner</h2>
 								<ul class="version-3-ul">
 									
 									<li><strong>Standard porta potty rental</strong>you can’t go wrong with our standard unit if you are looking for the basics.</li>
@@ -194,6 +199,9 @@
 							<br>
 								<p>Are you in need of portable toilet rentals in Olathe? Patriot Portable Restrooms has been serving Olathe for decades, working alongside local businesses, homeowners, and more. 
 									We take pride in our customer service and high-quality equipment. Our team delivers on all levels and we guarantee you will love working with us!</p>
+							</div>
+							<br>
+							
 						</div>
 					
 					</div>
@@ -327,5 +335,19 @@
 		<script src="./assets/js/bootstrap.min.js"></script>
 		<script src="./assets/js/mesonary.js"></script>
 		<script src="./assets/js/scripts.js"></script>
+		<script>
+			$(document).ready(function () {
+				var contents = $("#contents");
+				var contentsOffset = contents.offset().top;
+	
+				$(window).scroll(function () {
+					if ($(window).scrollTop() >= contentsOffset) {
+						contents.addClass("sticky");
+					} else {
+						contents.removeClass("sticky");
+					}
+				});
+			});
+		</script>
 	</body>
 </html>

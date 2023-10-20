@@ -15,32 +15,42 @@ h6 {
 	font-family: "Open Sans", sans-serif;
 }
 .container {
-	max-width: 1170px !important;
+	max-width: 1600px !important;
 }
 ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
+.section-title {
+    text-align: center;
+}
+.accordion-item {
+    margin-bottom: 30px;
+    padding-left: 24px;
+}
+section.best-cat-tay {
+    padding: 50px 0px;
+}
 a {
 	text-decoration: none;
-	color: #ff6d25;
+	color: #fff;
 	font-family: Open Sans;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 29px;
 }
+
 .btn-cs-btn {
-	border-radius: 15px;
-	background: #ff6d25;
+	background: #000;
 	color: #fff;
 }
 .btn-cs-btn:hover {
 	color: #fffddd;
-	background: #ff6d55;
+	background: #000;
 }
-
+button.navbar-toggler{border:none;}
 .navbar-nav {
 	background: transparent;
 	margin: 0 auto;
@@ -63,20 +73,15 @@ color: rgba(0, 0, 0, 0.60);
 	font-weight: 400;
 	line-height: 24px; /* 133.333% */
 }
-.Hero__section {
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 955px;
-	position: relative;
-	z-index: 1;
-	overflow: hidden;
-	
+
+
+.Hero__bottom{
+	height: 829px;
+	display: flex;
+	align-items: center;
 }
 
-
-
-.Hero__section .hero-content p{
+ .hero-content p{
 	color: #000;
 	font-family: Open Sans;
 	font-size: 20px;
@@ -84,7 +89,7 @@ color: rgba(0, 0, 0, 0.60);
 	font-weight: 400;
 	line-height: 29px; /* 145% */
 }
-.Hero__section .hero-content h1 {
+ .hero-content h1 {
 	// Best Cat Toys: Top Picks for Playful Felines
 color: black;
 font-size: 90px;
@@ -92,6 +97,10 @@ font-family: Lora;
 font-weight: 600;
 line-height: 109px;
 word-wrap: break-word
+}
+.content-item img{
+	max-width: 100%;
+	width: 100%;
 }
 .branding-wrapper{
 	position: relative;
@@ -421,17 +430,21 @@ footer {
 .Mobile-menu-wrapper {
 	display: none;
 	width: 0%;
+	position: relative;
 }
 .menushow {
 	display: block !important;
-	background: #fff;
+	background-color: #fff;
 	position: absolute;
 	width: 70%;
 	text-align: center;
 	top: 10px;
 	height: 100vh;
 	transition: all 0.5s ease-in-out;
-	z-index:30;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
 }
 .accordion-item:first-child{
 	border-top: 1px solid;
@@ -457,7 +470,7 @@ padding-left: 0px;
 	box-shadow: none;
 }
 #menuClose {
-	color: #ff6d25;
+	color: #000;
 	font-size: 30px;
 	text-align: right;
 	border: none;
@@ -475,6 +488,9 @@ padding-left: 0px;
 }
 .footer_logo {
 	margin-bottom: 30px;
+}
+.footer_logo a{
+	color:#fff !important;
 }
 .footer-wrapper h5 {
 	color: #fff;
@@ -573,7 +589,7 @@ padding-left: 0px;
 
 /*Large screen*/
 @media only screen and (min-width: 1370px) {
-	.Hero__section .hero-content h1 {
+	.hero-content h1 {
 		font-size: 90px;
 		line-height: 110px;
 	}
@@ -581,13 +597,13 @@ padding-left: 0px;
 
 /* Tablet Layout waid */
 @media only screen and (min-width: 992px) and (max-width: 1370px) {
-	.Hero__section .hero-content {
+	.hero-content {
 		text-align: center;
 	}
-	.Hero__section .hero-content h1 {
+	.hero-content h1 {
 		font-size: 40px;
 	}
-	.Hero__section .hero-content h1 span {
+	.hero-content h1 span {
 		font-size: 40px;
 	}
 	.Hero__section {
@@ -607,27 +623,27 @@ padding-left: 0px;
 
 @media only screen and (max-width: 991px) {
 
-	.Hero__section .hero-content {
+ .hero-content {
 		text-align: center;
 	}
-	.Hero__section .hero-content h1 {
+	.hero-content h1 {
 		font-size: 40px;
 	}
-	.Hero__section .hero-content h1 span {
+	.hero-content h1 span {
 		font-size: 40px;
 	}
 	.navbar-toggler-icon {
 		background: none;
-		color: #fff;
+		color: #000;
 		font-size: 30px;
 	}
 	.mobileMenu {
 		display: block;
 	}
-	.Hero__section .hero-content h1 {
-		line-height: 30px;
+	.hero-content h1 {
+		line-height: 60px;
 	}
-	.Hero__section .hero-content h1 span {
+	.hero-content h1 span {
 		line-height: 70px;
 	}
 	.desk {
@@ -649,3 +665,4 @@ padding-left: 0px;
 
 @media only screen and (max-width: 400px) {
 }
+i.fa{color:#fff !important;}
